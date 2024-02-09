@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Exo 2', sans-serif;
+}
+body{
+    background-image: linear-gradient(180deg, rgba(194, 152, 0, 1) 0%, rgba(119, 24, 94, 1) 100%);
+}
+#appMain{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100vh;
+}
+.appLeft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: orange;
+    background-color: #333;
+    width: 100%;
+    flex: 1;
+    height:100%;
+    text-shadow: 2px 0px 9px rgba(0, 0, 0, 0.91);
+    margin-bottom: 1rem;
+}
+.appRight{
+    flex: 1;
+}
+header{
+    text-align: center;
+}
+@media only screen and (max-width:1150px) {
+    #appMain{
+        display: flex;
+        flex-direction: column;
+    }
+}
